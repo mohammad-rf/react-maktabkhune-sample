@@ -5,14 +5,14 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import logo from "../image/logo_small.png";
 
-import img1 from "../image/sl-4/13637808bf9f938b487495e27f9a0a31.jpg";
-import img2 from "../image/sl-4/301f5227d74fabf27f2abd6ddeb26234.jpg";
-import img3 from "../image/sl-4/f5ff3148ec457b8b7bfd75512ac3719e.jpg";
-import img4 from "../image/sl-4/caff65e264b0367146368cc4361df511.jpg";
-import img5 from "../image/sl-4/46591773c201f54d66b2f52879f25095.jpg";
-import img6 from "../image/sl-4/8307a8eb3bd4ab0b024b73c4ecb4e58c.jpg";
-import img7 from "../image/sl-4/f5ff3148ec457b8b7bfd75512ac3719e.jpg";
-import img8 from "../image/sl-4/8307a8eb3bd4ab0b024b73c4ecb4e58c.jpg";
+import img1Slr4 from "../image/sl-4/13637808bf9f938b487495e27f9a0a31.jpg";
+import img2Slr4 from "../image/sl-4/301f5227d74fabf27f2abd6ddeb26234.jpg";
+import img3Slr4 from "../image/sl-4/f5ff3148ec457b8b7bfd75512ac3719e.jpg";
+import img4Slr4 from "../image/sl-4/caff65e264b0367146368cc4361df511.jpg";
+import img5Slr4 from "../image/sl-4/46591773c201f54d66b2f52879f25095.jpg";
+import img6Slr4 from "../image/sl-4/8307a8eb3bd4ab0b024b73c4ecb4e58c.jpg";
+import img7Slr4 from "../image/sl-4/f5ff3148ec457b8b7bfd75512ac3719e.jpg";
+import img8Slr4 from "../image/sl-4/8307a8eb3bd4ab0b024b73c4ecb4e58c.jpg";
 
 let SliderContent = (props) => {
   return (
@@ -70,28 +70,28 @@ let Slider4 = () => {
       <div className="swiper-wrapper">
         <Swiper spaceBetween={26} slidesPerView={"auto"}>
           <SwiperSlide>
-            <SliderContent img={img1} />
+            <SliderContent img={img1Slr4} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img2} />
+            <SliderContent img={img2Slr4} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img3} />
+            <SliderContent img={img3Slr4} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img4} />
+            <SliderContent img={img4Slr4} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img5} />
+            <SliderContent img={img5Slr4} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img6} />
+            <SliderContent img={img6Slr4} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img7} />
+            <SliderContent img={img7Slr4} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img8} />
+            <SliderContent img={img8Slr4} />
           </SwiperSlide>
         </Swiper>
       </div>

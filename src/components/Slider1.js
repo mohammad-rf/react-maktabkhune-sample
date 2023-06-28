@@ -4,23 +4,24 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper";
-
-import img1 from "../image/11_pyMwKlu.jpg";
-import img2 from "../image/1_hkxdtct.jpg";
-import img3 from "../image/20_3upx5r9.webp";
-import img4 from "../image/22_j5wuJ3f.webp";
-import img5 from "../image/23_dVldLDo.webp";
-import img6 from "../image/24_ZTYqWuw.webp";
-import img7 from "../image/25_jatdoJa.webp";
-import img8 from "../image/27_YzyH9Xe.webp";
-import img9 from "../image/36_qjFXfra.webp";
-import img10 from "../image/20_3upx5r9.webp";
-import img11 from "../image/21_FbeRELy.webp";
-import img12 from "../image/22_j5wuJ3f.webp";
-import img13 from "../image/23_dVldLDo.webp";
-import img14 from "../image/24_ZTYqWuw.webp";
-import img15 from "../image/25_jatdoJa.webp";
-import img16 from "../image/27_YzyH9Xe.webp";
+import {
+  img10Slr1,
+  img11Slr1,
+  img12Slr1,
+  img13Slr1,
+  img14Slr1,
+  img15Slr1,
+  img16Slr1,
+  img1Slr1,
+  img2Slr1,
+  img3Slr1,
+  img4Slr1,
+  img5Slr1,
+  img6Slr1,
+  img7Slr1,
+  img8Slr1,
+  img9Slr1,
+} from "./index.jsx";
 
 // let Slide = (props) => {
 //   return (
@@ -48,53 +49,53 @@ let Slider1 = () => {
         slidesPerView={6}
       >
         <SwiperSlide>
-          <img alt="1" src={img9} />
+          <img alt="1" src={img9Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img10} />
+          <img alt="1" src={img10Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img12} />
+          <img alt="1" src={img12Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img13} />
+          <img alt="1" src={img13Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img14} />
+          <img alt="1" src={img14Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img15} />
+          <img alt="1" src={img15Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img11} />
+          <img alt="1" src={img11Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img16} />
+          <img alt="1" src={img16Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img1} />
+          <img alt="1" src={img1Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img2} />
+          <img alt="1" src={img2Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img3} />
+          <img alt="1" src={img3Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img4} />
+          <img alt="1" src={img4Slr1} />
         </SwiperSlide>
 
         <SwiperSlide>
-          <img alt="1" src={img5} />
+          <img alt="1" src={img5Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img6} />
+          <img alt="1" src={img6Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img7} />
+          <img alt="1" src={img7Slr1} />
         </SwiperSlide>
         <SwiperSlide>
-          <img alt="1" src={img8} />
+          <img alt="1" src={img8Slr1} />
         </SwiperSlide>
       </Swiper>
       {/* <Swiper spaceBetween={50} slidesPerView={10}>

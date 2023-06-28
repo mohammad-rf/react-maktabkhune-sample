@@ -4,15 +4,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import logo from "../image/logo_small.png";
-
-import img1 from "../image/sld-2/163bdfbdeb9ff22c29b8aa8dcf0dea2f.webp";
-import img2 from "../image/sld-2/5f9f74878bce927d2eec5ea0defde04e.jpg";
-import img3 from "../image/sld-2/6c5737b09cca5e6da4bf236bce8e22c9.webp";
-import img4 from "../image/sld-2/8e43b158913ef1bae367621cef7ccae3.webp";
-import img5 from "../image/sld-2/acb6e3d155dda00f35027bd64c6515b1.webp";
-import img6 from "../image/sld-2/cd6fe94b5fd97253aabb2fed0c534953.webp";
-import img7 from "../image/sld-2/163bdfbdeb9ff22c29b8aa8dcf0dea2f.webp";
-import img8 from "../image/sld-2/5f9f74878bce927d2eec5ea0defde04e.jpg";
+import {
+  img1Slr2,
+  img2Slr2,
+  img3Slr2,
+  img4Slr2,
+  img5Slr2,
+  img6Slr2,
+  img7Slr2,
+  img8Slr2,
+} from "./index";
 
 let SliderContent = (props) => {
   return (
@@ -51,28 +52,28 @@ let Slider2 = () => {
       <div className="swiper-wrapper">
         <Swiper spaceBetween={26} slidesPerView={"auto"}>
           <SwiperSlide>
-            <SliderContent img={img1} />
+            <SliderContent img={img1Slr2} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img2} />
+            <SliderContent img={img2Slr2} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img3} />
+            <SliderContent img={img3Slr2} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img4} />
+            <SliderContent img={img4Slr2} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img5} />
+            <SliderContent img={img5Slr2} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img6} />
+            <SliderContent img={img6Slr2} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img7} />
+            <SliderContent img={img7Slr2} />
           </SwiperSlide>
           <SwiperSlide>
-            <SliderContent img={img8} />
+            <SliderContent img={img8Slr2} />
           </SwiperSlide>
         </Swiper>
       </div>
