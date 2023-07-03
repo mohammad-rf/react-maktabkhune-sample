@@ -1,34 +1,33 @@
 import React from "react";
-import Slider1 from "./Slider1";
-import Slider2 from "./Slider2";
-import Slider3 from "./Slider3";
-import Slider4 from "./Slider4Dynamic";
-import Slider5 from "./Slider5";
-import Banner from "./Banner";
-import Footer from "./Footer";
-import imgBaner1 from "../image/Carousel-Dsk_BKNH4IU.jpg";
-import imgBaner2 from "../image/banner/Carousel-Dsk_c4RCvDT.jpg";
-import imgBaner3 from "../image/banner/Carousel-Dsk_mrZZ4yK.jpg";
+import SliderType2 from "./SliderType2.js";
+import SliderType1 from "./SliderType1.js";
+import {
+  imgBaner1,
+  imgBaner2,
+  imgBaner3,
+  Banner,
+  dataSlider1,
+  dataSlider2,
+  dataSlider3,
+  dataSlider4,
+  dataSlider5,
+} from "./index.jsx";
 
 let Main = () => {
   return (
     <main>
       <div className="container-xl">
-        <Slider1 />
-        <Slider2 />
-<<<<<<< Updated upstream
-        <Slider3 />
-=======
-        <Slider data={data} />
->>>>>>> Stashed changes
-        <Slider4 />
+        <SliderType1 data={dataSlider1} />
+        <SliderType2 data={dataSlider2} />
         <Banner img={imgBaner1} />
-        <Slider1 />
+        <SliderType2 data={dataSlider3} />
+        <SliderType2 data={dataSlider4} />
+        <SliderType2 data={dataSlider5} />
         <Banner img={imgBaner2} />
-        <Slider5 />
-        <Slider3 />
+        <SliderType2 data={dataSlider2} />
+        <SliderType2 data={dataSlider3} />
         <Banner img={imgBaner3} />
-        <Slider2 />
+        <SliderType2 data={dataSlider4} />
       </div>
     </main>
   );

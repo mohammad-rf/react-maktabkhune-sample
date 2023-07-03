@@ -6,10 +6,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Autoplay } from "swiper";
-<<<<<<< Updated upstream
-=======
 import Menu from "./Menu";
->>>>>>> Stashed changes
 
 let Nav = () => {
   let [on, setOn] = useState(false);
@@ -18,32 +15,6 @@ let Nav = () => {
   };
 
   return (
-<<<<<<< Updated upstream
-    <nav className="d-flex">
-      <div className="navbar-logo">
-        <img src={logo} alt="" />
-      </div>
-      <div className="navbar-links">
-        <ul>
-          <li>
-            <div>
-              <i>
-                <svg viewBox="0 0 50 50">
-                  <path d="M8.667,15h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,15,8.667,15z"></path>
-                  <path d="M8.667,37h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,37,8.667,37z"></path>
-                  <path d="M8.667,26h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,26,8.667,26z"></path>
-                </svg>
-              </i>
-              دسته بندی ها
-            </div>
-          </li>
-          <li>
-            {" "}
-            <a href="e">آموزش سازمانی</a>
-          </li>
-          <li>
-            <a className="fw-bold fs-6" href="o">
-=======
     <>
       <nav className="d-flex">
         <div className="navbar-logo">
@@ -65,40 +36,33 @@ let Nav = () => {
               </div>
             </li>
             <li>
->>>>>>> Stashed changes
-              {" "}
-              مکتب پلاس
-            </a>
-          </li>
-          <li>
-            <a href="e"> مسیر های یادگیری </a>
-          </li>
-        </ul>
-      </div>
-      <div className="navbar-search">
-        <form className="form-control">
-          <input className="" placeholder="چه چیزی می‌خواهید یاد بگیرید؟" />
-          <button className="border-0">
-            <i></i>
+              <a>مکتب پلاس</a>
+            </li>
+            <li>
+              <a href="e"> مسیر های یادگیری </a>
+            </li>
+          </ul>
+        </div>
+        <div className="navbar-search">
+          <form className="form-control">
+            <input className="" placeholder="چه چیزی می‌خواهید یاد بگیرید؟" />
+            <button className="border-0">
+              <i></i>
+            </button>
+          </form>
+        </div>
+        <div className="navbar-login ms-auto">
+          <a className="link-teach rounded-1" href="a">
+            تدریس در مکتب خونه
+          </a>
+          <button className="btn-login btn btn-primary rounded-1">
+            ورود / ثبت نام
           </button>
-<<<<<<< Updated upstream
-        </form>
-      </div>
-      <div className="navbar-login ms-auto">
-        <a className="link-teach rounded-1" href="a">
-          تدریس در مکتب خونه
-        </a>
-        <button className="btn-login btn btn-primary rounded-1">
-          ورود / ثبت نام
-        </button>
-      </div>
-    </nav>
-=======
         </div>
       </nav>
+
       <Menu on={on} />
     </>
->>>>>>> Stashed changes
   );
 };
 

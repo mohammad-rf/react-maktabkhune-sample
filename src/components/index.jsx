@@ -70,30 +70,33 @@ import img8Slr5 from "../image/sld-2/5f9f74878bce927d2eec5ea0defde04e.jpg";
 
 
 // main
-import Slider1 from "./Slider1";
-import Slider2 from "./Slider2";
-import Slider from "./Slider";
-import Slider4 from "./Slider4";
-import Slider5 from "./Slider5";
+
 import Banner from "./Banner";
 import Footer from "./Footer";
 import imgBaner1 from "../image/Carousel-Dsk_BKNH4IU.jpg";
 import imgBaner2 from "../image/banner/Carousel-Dsk_c4RCvDT.jpg";
 import imgBaner3 from "../image/banner/Carousel-Dsk_mrZZ4yK.jpg";
-import data from "./dataSlider";
+
 
 // footer
 import nemad1 from "../image/nemad/logo.png";
 import nemad2 from "../image/nemad/samandehi.webp";
+
+import  { dataSlider1, dataSlider2, dataSlider3, dataSlider4, dataSlider5 } from './dataSlider'
+
+
+export  { dataSlider1, dataSlider2, dataSlider3, dataSlider4, dataSlider5 } 
 
 export{img10Slr1,img11Slr1,img12Slr1,img13Slr1,img14Slr1,img15Slr1,img16Slr1,img1Slr1,img2Slr1,img3Slr1,img4Slr1,img5Slr1,img6Slr1,img7Slr1,img8Slr1,img9Slr1}
 export{img1Slr2,img2Slr2,img3Slr2,img4Slr2,img5Slr2,img6Slr2,img7Slr2,img8Slr2}
 export{img1Slr3,img2Slr3,img3Slr3,img4Slr3,img5Slr3,img6Slr3,img7Slr3,img8Slr3}
 export{img1Slr4,img2Slr4,img3Slr4,img4Slr4,img5Slr4,img6Slr4,img7Slr4,img8Slr4,}
 export{img1Slr5,img2Slr5,img3Slr5,img4Slr5,img5Slr5,img6Slr5,img7Slr5,img8Slr5,}
-export{Slider1,Slider2,Slider,Slider4,Slider5,Banner,Footer,imgBaner1,imgBaner2,imgBaner3,data}
+export{Banner,Footer,imgBaner1,imgBaner2,imgBaner3,}
 // footer
 export{nemad1,nemad2}
 // header
 export{logo,sliderImg1,sliderImg2,sliderImg3,sliderImg4}
+
+
 

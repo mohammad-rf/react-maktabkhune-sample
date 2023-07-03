@@ -7,7 +7,7 @@ let App = () => {
     <>
       <Header />
       <Main />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
