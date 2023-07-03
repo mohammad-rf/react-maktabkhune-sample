@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import logo from "../image/logo_small.png";
 
+<<<<<<< Updated upstream:src/components/Slider3.js
 import img1 from "../image/sl-3/0b25e9f769cb66f194ed505f19e962e4.webp";
 import img2 from "../image/sl-3/80e8d8241f9e419d77c59dc7196c49b4.webp";
 import img3 from "../image/sl-3/99271d8e6eddabc6d459d75d1e39c882.webp";
@@ -44,6 +45,22 @@ let Slider3 = () => {
   return (
     <div className="slider rounded-2">
       <div className="slider-title">جدیدترین دوره های مکتب پلاس</div>
+=======
+let Slider = () => {
+  const cards = data.map((item) => {
+    return (
+      <SwiperSlide key={item.price}>
+        {/* <Card img={x.img} price={x.price} /> */}
+        <Card item={item} />
+      </SwiperSlide>
+    );
+  });
+  let titles = " جدیدترین دوره های مکتب پلاس";
+  return (
+    <div className="slider rounded-2">
+      <div className="slider-title"> {titles} </div>
+
+>>>>>>> Stashed changes:src/components/Slider.js
       <div className="swiper-wrapper">
         <Swiper spaceBetween={26} slidesPerView={"auto"}>
           <SwiperSlide>

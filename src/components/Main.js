@@ -16,7 +16,11 @@ let Main = () => {
       <div className="container-xl">
         <Slider1 />
         <Slider2 />
+<<<<<<< Updated upstream
         <Slider3 />
+=======
+        <Slider data={data} />
+>>>>>>> Stashed changes
         <Slider4 />
         <Banner img={imgBaner1} />
         <Slider1 />

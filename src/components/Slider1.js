@@ -37,7 +37,7 @@ let Slider1 = () => {
         <div className="fw-bold fs-5">مسیر های یادگیری</div>
         <div className="">
           مشاهده همه
-          <i class="fa-solid fa-angle-left"></i>
+          <i className="fa-solid fa-angle-left"></i>
         </div>
       </div>
 

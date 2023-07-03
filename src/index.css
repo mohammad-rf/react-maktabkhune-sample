@@ -76,18 +76,18 @@ nav .navbar-links a {
 nav .navbar-links li:nth-child(3) a {
   color: blueviolet;
 }
-header ul li:first-child {
+header nav ul li:first-child {
   padding: 20px;
   margin: 0px 5px;
   padding-left: 0;
 }
-header ul li:first-child div {
+header nav ul li:first-child div {
   display: flex;
   align-items: center;
   width: 8.5em;
   font-size: 13px;
 }
-header i {
+header nav i {
   height: 1.75rem;
   width: 1.75rem;
   display: flex;
@@ -137,6 +137,48 @@ header .navbar-login a:hover {
   background-color: orange;
 }
 
+/* /////mega-menu/  mega menu/// */
+
+.mega-menu {
+  display: flex;
+  width: 100%;
+  max-width: 1500px;
+  min-height: 550px;
+  height: 500px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  border: 1px solid #e0e3ec;
+}
+.mega-menu > ul {
+  width: 18%;
+  height: 100% !important;
+}
+.mega-menu > ul li {
+  background-color: #e0e3ec;
+  padding-inline: 20px 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: start;
+  align-items: center;
+  font-size: 14px;
+}
+.mega-menu > ul li::before {
+  content: "›";
+  font-size: 1.5em;
+  margin-right: auto;
+}
+.mega-menu svg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.mega-menu > ul li:hover {
+  background-color: #fff;
+  color: #009ca7;
+}
 /* banner slider swiper */
 
 header .swiper {
@@ -152,6 +194,51 @@ header .swiper-pagination {
 header .swiper-pagination .swiper-pagination-bullet {
   width: 0.75rem !important;
   height: 0.75rem !important;
+}
+/* main content */
+
+.menu--content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  /* align-items: flex-start; */
+  /* align-items: stretch; */
+  /* align-content: stretch; */
+  /* position: absolute; */
+  left: 0;
+  top: 0;
+  bottom: 0;
+  /* width: 80%; */
+  height: 550px;
+
+  padding-top: 5px;
+  padding-right: 20px;
+}
+.menu--content ul {
+  height: auto;
+  min-width: 15%;
+  width: fit-content;
+  padding: 5px 5px 5px 35px;
+  margin-bottom: 10px;
+}
+.menu--content li {
+  color: var(--bs-gray-600);
+  font-size: 13px;
+  margin-top: 6px;
+  padding-right: 10px;
+}
+.menu--content ul li:first-child {
+  color: var(--bs-gray-800);
+  padding: 0;
+}
+/* black page */
+.black-page {
+  position: absolute;
+  inset: 0;
+  background-color: black;
+  opacity: 0.7;
 }
 
 /*///// 3boxes//// header 3th  part  */
@@ -173,9 +260,9 @@ header .boxes .box {
   display: flex;
   align-items: center;
 }
-.box--svg i {
-  width: 2.5rem;
-  height: 2.5rem;
+.box--svg i svg {
+  width: 2.5rem !important;
+  height: 2.5rem !important;
 }
 
 .box--title {

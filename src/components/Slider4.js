@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import { Navigation } from "swiper";
 import logo from "../image/logo_small.png";
 
+<<<<<<< Updated upstream:src/components/Slider4Dynamic.js
 import img1 from "../image/sl-4/13637808bf9f938b487495e27f9a0a31.jpg";
 import img2 from "../image/sl-4/301f5227d74fabf27f2abd6ddeb26234.jpg";
 import img3 from "../image/sl-4/f5ff3148ec457b8b7bfd75512ac3719e.jpg";
@@ -13,6 +14,18 @@ import img5 from "../image/sl-4/46591773c201f54d66b2f52879f25095.jpg";
 import img6 from "../image/sl-4/8307a8eb3bd4ab0b024b73c4ecb4e58c.jpg";
 import img7 from "../image/sl-4/f5ff3148ec457b8b7bfd75512ac3719e.jpg";
 import img8 from "../image/sl-4/8307a8eb3bd4ab0b024b73c4ecb4e58c.jpg";
+=======
+import {
+  img1Slr4,
+  img2Slr4,
+  img3Slr4,
+  img4Slr4,
+  img5Slr4,
+  img6Slr4,
+  img7Slr4,
+  img8Slr4,
+} from "./index";
+>>>>>>> Stashed changes:src/components/Slider4.js
 
 let SliderContent = (props) => {
   return (

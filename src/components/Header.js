@@ -1,17 +1,24 @@
-import React from "react";
-import logo from "../image/logo_small.png";
-import sliderImg1 from "../image/Carousel-Dsk_BKNH4IU.jpg";
-import sliderImg2 from "../image/Slider-Dsk_2_eyb49SZ.jpg";
-import sliderImg3 from "../image/Slider-Dsk_3_2BHnW4r.jpg";
-import sliderImg4 from "../image/Slider-Dsk_4_5IV652H.jpg";
+import React, { useState } from "react";
+import { logo, sliderImg1, sliderImg2, sliderImg3, sliderImg4 } from "./index";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Autoplay } from "swiper";
+<<<<<<< Updated upstream
+=======
+import Menu from "./Menu";
+>>>>>>> Stashed changes
 
 let Nav = () => {
+  let [on, setOn] = useState(false);
+  let handeHover = () => {
+    setOn(!on);
+  };
+
   return (
+<<<<<<< Updated upstream
     <nav className="d-flex">
       <div className="navbar-logo">
         <img src={logo} alt="" />
@@ -36,6 +43,29 @@ let Nav = () => {
           </li>
           <li>
             <a className="fw-bold fs-6" href="o">
+=======
+    <>
+      <nav className="d-flex">
+        <div className="navbar-logo">
+          <img src={logo} alt="" />
+        </div>
+        <div className="navbar-links">
+          <ul>
+            <li>
+              {/* event for sho hide menu */}
+              <div onClick={handeHover}>
+                <i>
+                  <svg viewBox="0 0 50 50">
+                    <path d="M8.667,15h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,15,8.667,15z"></path>
+                    <path d="M8.667,37h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,37,8.667,37z"></path>
+                    <path d="M8.667,26h30c0.552,0,1-0.447,1-1s-0.448-1-1-1h-30c-0.552,0-1,0.447-1,1S8.114,26,8.667,26z"></path>
+                  </svg>
+                </i>
+                دسته بندی ها
+              </div>
+            </li>
+            <li>
+>>>>>>> Stashed changes
               {" "}
               مکتب پلاس
             </a>
@@ -51,6 +81,7 @@ let Nav = () => {
           <button className="border-0">
             <i></i>
           </button>
+<<<<<<< Updated upstream
         </form>
       </div>
       <div className="navbar-login ms-auto">
@@ -62,6 +93,12 @@ let Nav = () => {
         </button>
       </div>
     </nav>
+=======
+        </div>
+      </nav>
+      <Menu on={on} />
+    </>
+>>>>>>> Stashed changes
   );
 };
 

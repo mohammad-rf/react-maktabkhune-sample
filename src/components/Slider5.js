@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+<<<<<<< Updated upstream
 import logo from "../image/logo_small.png";
 
 import img1 from "../image/sl-5/15f6f2c59a01706820175bfb1acfe140.webp";
@@ -13,6 +14,19 @@ import img5 from "../image/sl-5/15f6f2c59a01706820175bfb1acfe140.webp";
 import img6 from "../image/sl-3/99271d8e6eddabc6d459d75d1e39c882.webp";
 import img7 from "../image/sld-2/163bdfbdeb9ff22c29b8aa8dcf0dea2f.webp";
 import img8 from "../image/sld-2/5f9f74878bce927d2eec5ea0defde04e.jpg";
+=======
+import {
+  img1Slr5,
+  img2Slr5,
+  img3Slr5,
+  img4Slr5,
+  img5Slr5,
+  img6Slr5,
+  img7Slr5,
+  img8Slr5,
+  logo,
+} from "./index";
+>>>>>>> Stashed changes
 
 let SliderContent = (props) => {
   return (
