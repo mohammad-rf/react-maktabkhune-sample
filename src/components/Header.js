@@ -66,6 +66,7 @@ let Nav = () => {
       </nav>
       <MegaMenu />
     </>
+>>>>>>> Stashed changes
   );
 };
 
@@ -89,15 +90,15 @@ let SliderBanner = () => {
       </SwiperSlide>
       <SwiperSlide>
         {" "}
-        <img className="w-100" alt="" src={sliderImg2} />{" "}
+        <img className="w-100" src={sliderImg2} />{" "}
       </SwiperSlide>
       <SwiperSlide>
         {" "}
-        <img className="w-100" alt="" src={sliderImg3} />{" "}
+        <img className="w-100" src={sliderImg3} />{" "}
       </SwiperSlide>
       <SwiperSlide>
         {" "}
-        <img className="w-100" alt="" src={sliderImg4} />{" "}
+        <img className="w-100" src={sliderImg4} />{" "}
       </SwiperSlide>
     </Swiper>
   );
