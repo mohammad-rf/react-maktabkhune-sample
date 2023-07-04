@@ -55,11 +55,44 @@ let Nav = () => {
           <a className="link-teach rounded-1" href="a">
             تدریس در مکتب خونه
           </a>
-          <button className="btn-login btn btn-primary rounded-1">
+          <button
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+            className="btn-login btn btn-primary rounded-1"
+          >
             ورود / ثبت نام
           </button>
         </div>
       </nav>
+      {/* modal */}
+      <div
+        class="modal fade"
+        id="modal"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body text-center">
+              <h5 class="modal-title w-100" id="exampleModalLabel">
+                ورود به مکتب‌ خونه
+              </h5>
+              <form>
+                <span>پست الکترونیکی یا شماره موبایل</span>
+                <input
+                  type="email"
+                  placeholder="ایمیل یا شماره موبایل (09xxxxxxxxx) خود را وارد کنید"
+                />
+                <button type="button" class="btn mt-3 w-100 btn-primary">
+                  ادامه
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <Menu on={on} />
     </>

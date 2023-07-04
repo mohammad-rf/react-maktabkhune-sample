@@ -136,6 +136,40 @@ header .navbar-login a:hover {
   color: white;
   background-color: orange;
 }
+/* moddal */
+
+.modal-content {
+  padding: 20px;
+  height: 200px;
+  width: 400px;
+  border-radius: 5px !important;
+}
+.modal-content h5 {
+  margin-bottom: 25px;
+  font-size: 15px;
+}
+.modal-content button {
+  background-color: #009ca7;
+  color: whitesmoke;
+}
+.modal-content form {
+  position: relative;
+}
+.modal-content form input {
+  height: 2rem;
+  direction: rtl;
+  padding: 5px;
+  border-radius: 6px;
+  border: 1px solid var(--bs-gray-500);
+}
+.modal-content span {
+  background: white;
+  font-size: 12px;
+  color: var(--bs-gray-700);
+  position: absolute;
+  bottom: 90%;
+  right: 5%;
+}
 
 /* /////mega-menu/  mega menu/// */
 
