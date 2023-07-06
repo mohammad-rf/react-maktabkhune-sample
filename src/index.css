@@ -76,18 +76,18 @@ nav .navbar-links a {
 nav .navbar-links li:nth-child(3) a {
   color: blueviolet;
 }
-header nav ul li:first-child {
+nav ul li:first-child {
   padding: 20px;
   margin: 0px 5px;
   padding-left: 0;
 }
-header nav ul li:first-child div {
+nav ul li:first-child div {
   display: flex;
   align-items: center;
   width: 8.5em;
   font-size: 13px;
 }
-header nav i {
+nav i {
   height: 1.75rem;
   width: 1.75rem;
   display: flex;
@@ -132,7 +132,7 @@ form i {
   margin: 0 10px;
   color: white;
 }
-header .navbar-login a:hover {
+.navbar-login a:hover {
   color: white;
   background-color: orange;
 }
@@ -220,7 +220,6 @@ header .swiper {
 }
 header .swiper-wrapper {
   padding-bottom: 80px;
-  /* border-bottom: solid 1.5px var(--bs-gray-400); */
 }
 header .swiper-pagination {
   top: 87% !important;
@@ -236,17 +235,10 @@ header .swiper-pagination .swiper-pagination-bullet {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
-  /* justify-content: flex-start; */
-  /* align-items: flex-start; */
-  /* align-items: stretch; */
-  /* align-content: stretch; */
-  /* position: absolute; */
   left: 0;
   top: 0;
   bottom: 0;
-  /* width: 80%; */
   height: 550px;
-
   padding-top: 5px;
   padding-right: 20px;
 }
@@ -570,4 +562,73 @@ main .swiper-slide {
 a {
   pointer-events: none;
   cursor: pointer !important;
+}
+
+/* signin page */
+.signin--const {
+}
+.signin--const button {
+  padding: 5px 10px;
+  color: white;
+  background-color: #009ca7;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 1rem;
+}
+.signin--const .phone {
+  margin-bottom: 2rem;
+  font-size: 12px;
+}
+.signin--const .phone-number {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.dynamic-navbar div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3rem;
+  font-size: 14px;
+}
+.dynamic-navbar .active {
+  background: #009ca7;
+  color: #fff;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.blue-robbon {
+  background-color: #009ca7;
+  height: 0.8rem;
+  width: 100%;
+}
+.signin--const > div div:nth-child(3) div {
+  font-size: 13px;
+}
+/* sec part  dynamic part */
+.my-courses > div:first-child::before {
+  content: "";
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  background-color: black;
+  margin-left: 4px;
+  margin-bottom: 1px;
+}
+.my-courses > div:first-child {
+  font-size: 14px;
+}
+
+.my-courses p {
+  font-size: 14px;
+}
+.my-courses button {
+  font-size: 12px;
+  display: flex;
+  padding: 5px;
+  background-color: #009ca7;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
 }
