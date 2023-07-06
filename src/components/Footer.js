@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../image/logo_small.png";
-import { nemad1, nemad2 } from "./index";
+import { nemad1, nemad2 } from "./import";
 
 let About = () => {
   return (

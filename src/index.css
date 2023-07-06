@@ -54,10 +54,10 @@ nav {
   margin-right: 20px;
 }
 
-header .navbar-links {
+.navbar-links {
   min-width: 30em;
 }
-header .navbar-links ul {
+.navbar-links ul {
   display: flex;
   width: 100%;
   padding: 0;

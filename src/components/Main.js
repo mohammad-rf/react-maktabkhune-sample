@@ -11,7 +11,7 @@ import {
   dataSlider3,
   dataSlider4,
   dataSlider5,
-} from "./index.jsx";
+} from "./import.jsx";
 
 let Main = () => {
   return (

@@ -7,7 +7,7 @@ import sliderImg1 from "../image/Carousel-Dsk_BKNH4IU.jpg";
 import sliderImg2 from "../image/Slider-Dsk_2_eyb49SZ.jpg";
 import sliderImg3 from "../image/Slider-Dsk_3_2BHnW4r.jpg";
 import sliderImg4 from "../image/Slider-Dsk_4_5IV652H.jpg";
-
+import Header from './Header'
 // slider1
 
 import img1Slr1 from "../image/11_pyMwKlu.jpg";
@@ -70,7 +70,7 @@ import img8Slr5 from "../image/sld-2/5f9f74878bce927d2eec5ea0defde04e.jpg";
 
 
 // main
-
+import Main from './Main'
 import Banner from "./Banner";
 import Footer from "./Footer";
 import imgBaner1 from "../image/Carousel-Dsk_BKNH4IU.jpg";
@@ -86,13 +86,12 @@ import  { dataSlider1, dataSlider2, dataSlider3, dataSlider4, dataSlider5 } from
 
 
 export  { dataSlider1, dataSlider2, dataSlider3, dataSlider4, dataSlider5 } 
-
 export{img10Slr1,img11Slr1,img12Slr1,img13Slr1,img14Slr1,img15Slr1,img16Slr1,img1Slr1,img2Slr1,img3Slr1,img4Slr1,img5Slr1,img6Slr1,img7Slr1,img8Slr1,img9Slr1}
 export{img1Slr2,img2Slr2,img3Slr2,img4Slr2,img5Slr2,img6Slr2,img7Slr2,img8Slr2}
 export{img1Slr3,img2Slr3,img3Slr3,img4Slr3,img5Slr3,img6Slr3,img7Slr3,img8Slr3}
 export{img1Slr4,img2Slr4,img3Slr4,img4Slr4,img5Slr4,img6Slr4,img7Slr4,img8Slr4,}
 export{img1Slr5,img2Slr5,img3Slr5,img4Slr5,img5Slr5,img6Slr5,img7Slr5,img8Slr5,}
-export{Banner,Footer,imgBaner1,imgBaner2,imgBaner3,}
+export{Header,Main,Banner,Footer,imgBaner1,imgBaner2,imgBaner3,}
 // footer
 export{nemad1,nemad2}
 // header

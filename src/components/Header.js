@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { logo, sliderImg1, sliderImg2, sliderImg3, sliderImg4 } from "./index";
+import { logo, sliderImg1, sliderImg2, sliderImg3, sliderImg4 } from "./import";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -36,7 +36,10 @@ let Nav = () => {
               </div>
             </li>
             <li>
-              <a>مکتب پلاس</a>
+              <a> آموزش سازمانی </a>
+            </li>
+            <li>
+              <a className="fw-bold fs-6">مکتب پلاس</a>
             </li>
             <li>
               <a href="e"> مسیر های یادگیری </a>
@@ -67,16 +70,16 @@ let Nav = () => {
       </nav>
       {/* modal */}
       <div
-        class="modal fade"
+        className="modal fade"
         id="modal"
-        tabindex="-1"
+        tabIndex="-1"
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-body text-center">
-              <h5 class="modal-title w-100" id="exampleModalLabel">
+        <div className="modal-dialog">
+          <div className="modal-content">
+            <div className="modal-body text-center">
+              <h5 className="modal-title w-100" id="exampleModalLabel">
                 ورود به مکتب‌ خونه
               </h5>
               <form>
@@ -85,7 +88,7 @@ let Nav = () => {
                   type="email"
                   placeholder="ایمیل یا شماره موبایل (09xxxxxxxxx) خود را وارد کنید"
                 />
-                <button type="button" class="btn mt-3 w-100 btn-primary">
+                <button type="button" className="btn mt-3 w-100 btn-primary">
                   ادامه
                 </button>
               </form>
@@ -315,3 +318,4 @@ let Header = () => {
   );
 };
 export default Header;
+export { Nav };

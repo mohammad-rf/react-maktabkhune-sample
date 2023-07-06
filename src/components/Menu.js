@@ -1,5 +1,7 @@
 import { click } from "@testing-library/user-event/dist/click";
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
+
 let menuHead = [
   { value: "برنامه نویسی", id: 1 },
   { value: " زبان خارجه", id: 2 },
@@ -59,7 +61,9 @@ let MenuContent1 = (props) => {
       <div style={mainStyle} className="menu--content ">
         <ul className=" d-flex flex-column">
           <li> زبان‌های برنامه‌نویسی </li>
-          <li> پایتون </li>
+          <li>
+            <Link to="/python"> لینک پایتون </Link>
+          </li>
           <li> جاوا </li>
           <li> زبان‌های برنامه‌نویسی </li>
           <li> پایتون </li>

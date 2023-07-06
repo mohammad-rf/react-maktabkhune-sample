@@ -47,7 +47,7 @@ import {
   img6Slr5,
   img7Slr5,
   img8Slr5,
-} from "./index";
+} from "./import";
 let dataSlider1 = [
   { img: img1Slr1 },
   { img: img2Slr1 },
