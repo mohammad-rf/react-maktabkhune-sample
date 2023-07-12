@@ -1,14 +1,17 @@
 import React, { useState } from "react";
-import { Nav } from "../Header";
+import { Nav } from "../components/Header";
+import profileLogo from "../image/avatar.webp";
+import { Footer } from "../components/import";
+import { Link } from "react-router-dom";
 
 function MyCourse(props) {
   let style = { display: props.selectedDiv === 1 ? "block" : "none" };
 
   return (
-    <div style={style} id="1">
-      <div className="my-courses px-2 py-3">
-        <div className="mb-2">دوره های مکتب پلاس من:</div>
-        <div className="bg-white d-flex justify-content-center flex-wrap px-2 pb-3 pt-2">
+    <div style={style}>
+      <div className="my-courses">
+        <div className="mb-2 ">دوره های مکتب پلاس من:</div>
+        <div className="bg-white border border-1 d-flex justify-content-center flex-wrap px-2 pb-3 pt-2">
           <p className="align-self-start w-100">
             {" "}
             شما در هیچ دوره مکتب پلاس شرکت نکرده اید.{" "}
@@ -16,26 +19,87 @@ function MyCourse(props) {
           <button className="d-flex ">دیدن دوره های مکتب پلاس</button>
         </div>
       </div>
-      <div className="my-courses px-2 py-3">
-        <div className="mb-2">دوره های مکتب پلاس من:</div>
-        <div className="bg-white d-flex justify-content-center flex-wrap px-2 pb-3 pt-2">
+      <div className="my-courses">
+        <div className="mb-2">دوره های رایگان من:</div>
+        <div className="bg-white border border-1 d-flex justify-content-center flex-wrap px-2 pb-3 pt-2">
           <p className="align-self-start w-100">
             {" "}
             شما در هیچ دوره مکتب پلاس شرکت نکرده اید.{" "}
           </p>
-          <button className="d-flex ">دیدن دوره های مکتب پلاس</button>
+          <button className="d-flex ">دیدن دوره های رایگان</button>
         </div>
       </div>
-      <div className="my-courses px-2 py-3">
-        <div className="mb-2">دوره های مکتب پلاس من:</div>
-        <div className="bg-white d-flex justify-content-center flex-wrap px-2 pb-3 pt-2">
+      <div className="my-courses">
+        <div className="mb-2"> همایش ها و دوره های من: </div>
+        <div className="bg-white border border-1 d-flex justify-content-center flex-wrap px-2 pb-3 pt-2">
           <p className="align-self-start w-100">
             {" "}
-            شما در هیچ دوره مکتب پلاس شرکت نکرده اید.{" "}
+            شما هنوز همایش منتخبی ندارید.{" "}
           </p>
-          <button className="d-flex ">دیدن دوره های مکتب پلاس</button>
+          <button className="d-flex "> دیدن همایش ها</button>
         </div>
       </div>
+    </div>
+  );
+}
+
+function Profile(props) {
+  let style = { display: props.selectedDiv === 2 ? "block" : "none" };
+  return (
+    <div style={style} className="p-4 profile-wrapper">
+      <div className="profile d-flex row rounded-1 border border-1">
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+        <div className="col-6 ">
+          <div>نام:</div>
+          <div></div>
+        </div>
+      </div>
+      <button className="profile-edit rounded-pill">
+        <Link to="/profile-edit"> ویرایش پروفایل </Link>
+      </button>
     </div>
   );
 }
@@ -51,8 +115,8 @@ function Content() {
     <>
       <div className="signin--const">
         <div className="text-center">
-          <div>
-            <img className="mt-3 mb-4" alt=" " src="" />
+          <div className="profile-logo--wrapper">
+            <img className="mt-3 mb-4" alt=" " src={profileLogo} />
           </div>
           <div>
             <button>ثبت ایمیل برای ورود به مکتب خونه</button>
@@ -111,17 +175,19 @@ function Content() {
         </div>
       </div>
       <MyCourse selectedDiv={selectedDiv} />
+      <Profile selectedDiv={selectedDiv} />
     </>
   );
 }
 
-const SignIn = () => {
+const Dashboard = () => {
   return (
     <>
       <Nav />
       <Content />
+      <Footer />
     </>
   );
 };
 
-export default SignIn;
+export default Dashboard;

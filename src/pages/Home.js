@@ -1,5 +1,5 @@
 import React from "react";
-import { Main, Header, Footer } from "../import.jsx";
+import { Main, Header, Footer } from "../components/import";
 
 let Home = () => {
   return (

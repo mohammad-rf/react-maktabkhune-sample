@@ -7,6 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Autoplay } from "swiper";
 import Menu from "./Menu";
+import { Link } from "react-router-dom";
 
 let Nav = () => {
   let [on, setOn] = useState(false);
@@ -15,7 +16,7 @@ let Nav = () => {
   };
 
   return (
-    <>
+    <div className="nav-wrapper">
       <nav className="d-flex">
         <div className="navbar-logo">
           <img src={logo} alt="" />
@@ -60,16 +61,16 @@ let Nav = () => {
           </a>
           <button
             type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#modal"
+            // data-bs-toggle="modal"
+            // data-bs-target="#modal"
             className="btn-login btn btn-primary rounded-1"
           >
-            ورود / ثبت نام
+            <Link to="/login">ورود / ثبت نام</Link>
           </button>
         </div>
       </nav>
       {/* modal */}
-      <div
+      {/* <div
         className="modal fade"
         id="modal"
         tabIndex="-1"
@@ -95,10 +96,10 @@ let Nav = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
 
       <Menu on={on} />
-    </>
+    </div>
   );
 };
 

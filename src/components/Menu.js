@@ -13,9 +13,9 @@ let menuHead = [
   { value: " هنر", id: 8 },
   { value: " دانشگاهی انسانی", id: 9 },
 ];
-let BlackPage = () => {
-  return <div className="black-page"></div>;
-};
+// let BlackPage = () => {
+//   return <div className="black-page"></div>;
+// };
 let li = (
   <i>
     <svg

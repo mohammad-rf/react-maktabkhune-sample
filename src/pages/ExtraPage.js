@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer, Header } from "../import";
+import { Main, Header, Footer } from "../components/import";
 
 const Phyton = () => {
   return (
