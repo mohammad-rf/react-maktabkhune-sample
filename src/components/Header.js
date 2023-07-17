@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { logo, sliderImg1, sliderImg2, sliderImg3, sliderImg4 } from "./import";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -8,12 +8,14 @@ import "swiper/css/navigation";
 import { Pagination, Autoplay } from "swiper";
 import Menu from "./Menu";
 import { Link } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 
 let Nav = () => {
   let [on, setOn] = useState(false);
   let handeHover = () => {
     setOn(!on);
   };
+  const { loggedIn } = useAuth();
 
   return (
     <div className="nav-wrapper">
@@ -24,7 +26,7 @@ let Nav = () => {
         <div className="navbar-links">
           <ul>
             <li>
-              {/* event for sho hide menu */}
+              {/* event for show hide menu */}
               <div onClick={handeHover}>
                 <i>
                   <svg viewBox="0 0 50 50">
@@ -59,44 +61,13 @@ let Nav = () => {
           <a className="link-teach rounded-1" href="a">
             تدریس در مکتب خونه
           </a>
-          <button
-            type="button"
-            // data-bs-toggle="modal"
-            // data-bs-target="#modal"
-            className="btn-login btn btn-primary rounded-1"
-          >
-            <Link to="/login">ورود / ثبت نام</Link>
+          <button type="button" className="btn-login btn btn-primary rounded-1">
+            <Link to={loggedIn ? "/dashboard" : "/login"}>
+              {loggedIn ? "پروفایل" : " ورود / ثبت نام "}{" "}
+            </Link>
           </button>
         </div>
       </nav>
-      {/* modal */}
-      {/* <div
-        className="modal fade"
-        id="modal"
-        tabIndex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog">
-          <div className="modal-content">
-            <div className="modal-body text-center">
-              <h5 className="modal-title w-100" id="exampleModalLabel">
-                ورود به مکتب‌ خونه
-              </h5>
-              <form>
-                <span>پست الکترونیکی یا شماره موبایل</span>
-                <input
-                  type="email"
-                  placeholder="ایمیل یا شماره موبایل (09xxxxxxxxx) خود را وارد کنید"
-                />
-                <button type="button" className="btn mt-3 w-100 btn-primary">
-                  ادامه
-                </button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div> */}
 
       <Menu on={on} />
     </div>

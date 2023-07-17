@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { Nav } from "../components/Header";
 import profileLogo from "../image/avatar.webp";
 import { Footer } from "../components/import";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../Context/AuthContext";
 
 function MyCourse(props) {
   let style = { display: props.selectedDiv === 1 ? "block" : "none" };
@@ -106,9 +107,17 @@ function Profile(props) {
 
 function Content() {
   let [selectedDiv, setDiv] = useState(1);
+  const { loggedIn, setLoggedIn } = useAuth();
+  const navigate =  useNavigate()
 
   function handleClick(id) {
     setDiv((selectedDiv = id));
+  }
+  function handleLogOut() {
+    setLoggedIn(false);
+   if (!loggedIn ) navigate("/")
+   else return
+
   }
 
   return (
@@ -129,7 +138,10 @@ function Content() {
             <div className="px-3 py-2 border border-dark me-2 rounded-pill">
               تغییر رمز
             </div>
-            <div className="px-3 py-2 border border-1 border-dark rounded-pill">
+            <div
+              onClick={handleLogOut}
+              className="px-3 py-2 border border-1 border-dark rounded-pill"
+            >
               خروج
             </div>
           </div>

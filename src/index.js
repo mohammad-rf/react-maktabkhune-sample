@@ -6,14 +6,3 @@ import "./index.css";
 import App from "./App";
 
 ReactDOM.createRoot(document.getElementById("root")).render(<App />);
-
-{
-  /* <Suspense fallback={<Loader />}>
-      <BrowserRouter> 
-        <ContextProvider>         
-            <App />  
-        </ContextProvider>
-      </BrowserRouter>
-    </Suspense>
-  </React.StrictMode>, */
-}

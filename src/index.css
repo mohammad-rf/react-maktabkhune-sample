@@ -616,6 +616,7 @@ a {
 }
 .signin--const > div div:nth-child(3) div {
   font-size: 13px;
+  cursor: pointer;
 }
 /* sec part  dynamic part */
 .my-courses {

@@ -1,29 +1,39 @@
+// import axios from "axios";
+// import { Await } from "react-router-dom";
+
 const dataUser = [
   {
     id: 1,
     name: "mohammad",
-    phone: "78965441",
+    email: "mohammad@gamil.com",
+    passWord: "1111",
   },
   {
     id: 2,
     name: "ali",
-    phone: "78965441",
+    email: "ali@gamil.com",
+    passWord: "2222",
   },
   {
     id: 3,
     name: "hossein",
-    phone: "78965441",
+    email: "mohammad@gamil.com",
+    passWord: "3333",
   },
   {
     id: 4,
     name: "reza",
-    phone: "78965441",
+    email: "mohammad@gamil.com",
+    passWord: "3333",
   },
   {
     id: 5,
     name: "behnam",
-    phone: "78965441",
+    email: "mohammad@gamil.com",
+    passWord: "4444",
   },
 ];
+
+// const response=Await.axios.get()
 
 export default dataUser;

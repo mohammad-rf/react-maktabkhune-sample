@@ -1,15 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./sign-style.css";
 import { useAuth } from "../Context/AuthContext";
-
+import dataUser from "../UsersData";
+import { Link } from "react-router-dom";
 // login Component
 const LogIn = () => {
-  // state to keep inputs values
-  let [formData, setFormData] = useState({
-    username: "",
-    password: "",
+  const [data, setData] = useState({});
+
+  //this state save inpute value after submit
+  const { user, setUser, loggedIn, setLoggedIn } = useAuth();
+
+  //this state save input value on state before submit
+  const [formData, setFormData] = useState({
+    userName: "",
+    passWord: "",
   });
-  //  func for save input values on above state
+
+  //  func for save input values on state
   function handleChange(evt) {
     setFormData((prevData) => {
       return {
@@ -18,25 +25,25 @@ const LogIn = () => {
       };
     });
   }
-  function handleSubmit(evt) {
+
+  const handleSubmit = (evt) => {
+    console.log(loggedIn);
+    console.log(user);
     evt.preventDefault();
-    console.log("hhhhh");
-  }
-  // const { authUser, setAuthUser, isLogged, setIsLogged } = useAuth();
-  // const logIn = (e) => {
-  //   e.preventDefault();
-  //   isLogged(true);
-  //   setAuthUser({
-  //     Name: "john Doe",
-  //   });
-  // };
-  // const logOut = (e) => {
-  //   e.preventDefault();
-  //   isLogged(false);
-  //   setAuthUser({
-  //     Name: "john Doe",
-  //   });
-  // };
+    // is this usefuul or not?????npm i
+    setData({
+      passWord: formData.passWord,
+      userName: formData.userName,
+    });
+
+    let p = "1111";
+    let u = "mohammad@gmail.com";
+    setUser(() => {
+      let res = dataUser.find((x) => x.passWord === p && x.email === u);
+      setLoggedIn(res ? true : false);
+      return res;
+    });
+  };
   return (
     <>
       <div className="d-flex flex-column justify-content-center align-items-center  min-vh-100 ">
@@ -73,7 +80,8 @@ const LogIn = () => {
               </span>
               <span className="">ثبت نام</span>
             </a>
-            <a
+            <Link
+              to={loggedIn ? "/dashboard" : "#"}
               className="text-decoration-none px-4 rounded-2 d-inline-flex align-items-center"
               href="aa"
             >
@@ -98,7 +106,7 @@ const LogIn = () => {
                 </svg>
               </span>
               <span className="">ورود</span>
-            </a>
+            </Link>
           </div>
           <div className="boxes-4 mb-5 row ">
             <div className="col-5 me-4 shadow-sm me- d-flex align-items-center my-4 px-3 pe-4 rounded-2">
@@ -218,7 +226,7 @@ const LogIn = () => {
               <input
                 onChange={handleChange}
                 className="form-control w-100"
-                name="username"
+                name="userName"
                 type="email"
                 value={formData.username}
               />
@@ -229,9 +237,9 @@ const LogIn = () => {
               <input
                 onChange={handleChange}
                 className="form-control w-100"
-                name="password"
-                type="password"
-                value={formData.password}
+                name="passWord"
+                type="passWord"
+                value={formData.passWord}
               />
 
               <input
