@@ -27,10 +27,8 @@ const LogIn = () => {
   }
 
   const handleSubmit = (evt) => {
-    console.log(loggedIn);
-    console.log(user);
     evt.preventDefault();
-    // is this usefuul or not?????npm i
+    // is this useful or not????
     setData({
       passWord: formData.passWord,
       userName: formData.userName,
@@ -39,11 +37,16 @@ const LogIn = () => {
     let p = "1111";
     let u = "mohammad@gmail.com";
     setUser(() => {
-      let res = dataUser.find((x) => x.passWord === p && x.email === u);
+      let res = dataUser.find(
+        (x) => x.passWord === data.passWord && x.email === data.userName
+      );
       setLoggedIn(res ? true : false);
       return res;
     });
   };
+  console.log(`data=` + data);
+  console.log("form data" + formData);
+  console.log(loggedIn);
   return (
     <>
       <div className="d-flex flex-column justify-content-center align-items-center  min-vh-100 ">
