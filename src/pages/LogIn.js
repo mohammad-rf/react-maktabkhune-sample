@@ -252,8 +252,6 @@ const LogIn = () => {
                 type="submit"
               />
             </form>
-
-            {/*  */}
           </div>
         </section>
       </div>

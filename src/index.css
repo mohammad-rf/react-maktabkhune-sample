@@ -37,12 +37,9 @@ img {
   display: inline-block;
 }
 
-/*  */
+/*//HEADER//*/
 
-/*//////HEADER////  */
-
-/*/
-/ nav// */
+/*nav*/
 .nav-wrapper {
   height: 80px;
   width: 100%;
@@ -179,7 +176,7 @@ form i {
   right: 5%;
 }
 
-/* /////mega-menu/  mega menu/// */
+/*mega-menu mega men */
 
 .mega-menu {
   display: flex;
@@ -276,7 +273,7 @@ header .swiper-pagination .swiper-pagination-bullet {
   opacity: 0.7;
 }
 
-/*///// 3boxes//// header 3th  part  */
+/* 3boxes// header 3th  part  */
 
 header .boxes {
   padding: 20px 0;
@@ -308,7 +305,7 @@ header .boxes .box {
   margin-top: 10px;
 }
 
-/*  //////////// Main/////////Main///////// Style */
+/* Main/Style */
 
 /* slider 1 */
 main .learning-ways .swiper {
@@ -448,13 +445,13 @@ main .swiper-slide {
   height: auto;
 }
 
-/* ////////baner/// */
+/* baner/ */
 
 .banner {
   padding: 40px 0;
 }
 
-/* categoryyy */
+/* category*/
 
 .category {
   overflow: auto;
@@ -477,7 +474,7 @@ main .swiper-slide {
   color: #009ca7;
 }
 
-/*////////// Footer ///////*/
+/*Footer*/
 
 .footer-wrapper {
   background-color: var(--bs-gray-400);
@@ -520,7 +517,7 @@ main .swiper-slide {
 .footer-column div span {
   margin: 10px 0;
 }
-/*  */
+/* divider */
 .footer-socially {
   width: 35%;
   padding-bottom: 5px;
@@ -719,6 +716,5 @@ form select::selection {
 }
 .login {
   background-color: #fff;
-  /* height: 200px; */
   width: 300px;
 }
