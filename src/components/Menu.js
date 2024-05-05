@@ -266,7 +266,7 @@ let Menu = (props) => {
           </li>
         ))}
       </ul>
-      {/* these are main part of menu*/}
+      {/* these are the main part of the menu*/}
       <MenuContent1 id={1} selectedDiv={selectedDiv} />
       <MenuContent2 id={2} selectedDiv={selectedDiv} />
     </div>
